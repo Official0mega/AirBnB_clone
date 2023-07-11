@@ -3,6 +3,7 @@
 Place Module for the HBNB project.
 """
 import os
+from tests.test_models.test_base_model import TestBaseModel
 from sqlalchemy import Column, Float, ForeignKey, Integer, String, Table
 from sqlalchemy.orm import relationship
 from models.base_model import BaseModel, Base
