@@ -15,6 +15,7 @@ The list of host server IP addresses.
 This variable sets the host servers where the static files will be deployed.
 """
 
+
 @runs_once
 def do_pack():
     """
