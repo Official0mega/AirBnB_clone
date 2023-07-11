@@ -5,6 +5,7 @@ HBNB Console Module
 This module provides a command-line interface (CLI) for the HBNB project.
 It allows users to interact with the application, create objects, retrieve
 object information, update objects, and perform other actions.
+
 """
 
 import cmd
@@ -13,6 +14,7 @@ import re
 import os
 import sys
 import uuid
+
 
 from models.base_model import BaseModel
 from models import storage
@@ -28,8 +30,10 @@ class HBNBCommand(cmd.Cmd):
     """
     HBNB Console Class
 
-    This class implements the command-line interface (CLI) for the HBNB project.
+    This class implements the command-line interface (CLI)
+    for the HBNB project.
     It inherits from the cmd.Cmd class provided by the cmd module.
+
     """
 
     # Determines the prompt for interactive/non-interactive modes
@@ -64,7 +68,9 @@ class HBNBCommand(cmd.Cmd):
         Preloop Hook
 
         This method is executed before the command loop begins.
-        It prints the prompt if the input stream is not connected to a terminal.
+        It prints the prompt if the input stream
+        is not connected to a terminal.
+
         """
         if not sys.__stdin__.isatty():
             print('(hbnb)')
@@ -126,7 +132,9 @@ class HBNBCommand(cmd.Cmd):
         Postcommand Hook
 
         This method is called just after the command is executed.
-        It prints the prompt if the input stream is not connected to a terminal.
+        It prints the prompt if the input stream is not
+        connected to a terminal.
+
         """
         if not sys.__stdin__.isatty():
             print('(hbnb) ', end='')
@@ -169,7 +177,9 @@ class HBNBCommand(cmd.Cmd):
         Empty Line Override
 
         Overrides the emptyline method of the cmd.Cmd class.
-        It prevents repeating the previous command when the user inputs an empty line.
+        It prevents repeating the previous command when
+        the user inputs an empty line.
+
         """
         return False
 
@@ -179,7 +189,9 @@ class HBNBCommand(cmd.Cmd):
 
         Creates an instance of a class.
         The class name is provided as an argument.
-        Additional attributes can be specified in the format: attributeName=attributeValue.
+        Additional attributes can be specified in the format:
+        attributeName=attributeValue.
+
         """
         ignored_attrs = ('id', 'created_at', 'updated_at', '__class__')
         class_name = ''
@@ -251,8 +263,8 @@ class HBNBCommand(cmd.Cmd):
         Usage: create <className> [attributeName=attributeValue ...]
         """
         print("Creates an instance of a class")
-        print("You can optionally provide additional attributes with their values")
-        print("Example: create User email=\"example@example.com\" password=\"123456\"")
+        print("You can optionally provide additional attributes with values")
+        print("Exp: create User email=\"Omega@gmail.com\" password=\"Fh7!8\"")
         print()
 
     def do_show(self, args):
