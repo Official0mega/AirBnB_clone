@@ -18,3 +18,11 @@ To set up..please run
 
 ### To find the IP address of your server, you can use the following command:
 * ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
+
+
+### ip addr show eth0 | grep inet
+* Verify IP address: Double-check the IP address of your server by running the command
+
+
+
+
