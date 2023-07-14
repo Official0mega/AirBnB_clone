@@ -9,7 +9,7 @@ across models.
 
 import os
 import uuid
-from tests.test_models.test_base_model import TestBaseModel
+#from tests.test_models.test_base_model import TestBaseModel
 from datetime import datetime
 from sqlalchemy import Column, String, DATETIME
 from sqlalchemy.ext.declarative import declarative_base
