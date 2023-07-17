@@ -38,10 +38,11 @@ class FileStorage:
             dict: A dictionary of objects in storage.
         """
         if cls is None:
-            return self.__objects
+            return FileStorage.__objects
+        # Access the class-level attribute correctly
         else:
             filtered_dict = {}
-            for key, value in self.__objects.items():
+            for key, value in FileStorage.__objects.items():
                 if isinstance(value, cls):
                     filtered_dict[key] = value
             return filtered_dict
