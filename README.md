@@ -36,7 +36,7 @@ An administrative interface to manage user accounts, listings, and handle report
 * Responsive Design:
 The application should be designed to work well on different devices, including desktops, tablets, and mobile phones.
 
-**Note** To implement the project, developers typically use web development technologies such as HTML, CSS, JavaScript, and a backend framework like Django, Ruby on Rails, Node.js, or Flask. Database management systems like MySQL, PostgreSQL, or MongoDB are used to store the application data.
+**Note** To implement this project effectively, we typically use web development technologies such as HTML, CSS, JavaScript, and a backend framework like Django, Ruby on Rails, Node.js, or Flask. Database management systems like MySQL, PostgreSQL, or MongoDB are used to store the application data.
 
 **Note** It's important to note that the specific features and complexity of the "Airbnb_clone" project can vary based on the developer's goals and requirements. It can be a great learning experience for aspiring web developers to practice building a real-world application, understanding user authentication, database management, and handling user interactions.
 
